@@ -8,44 +8,44 @@ const generateMarkdown = require(`./generateMarkdown`);
 const questions = [
         {
             type: 'input',
-            name: 'Title',
+            name: 'title',
             message: 'What is your project title?',
           },
           {
             type: 'input',
-            name: 'Description',
+            name: 'description',
             message: 'Give a brief description of your project. (i.e. objective, motivation, what you learned etc..)',
           },
           {
             type: 'input',
-            name: 'Installation',
+            name: 'installation',
             message: 'Are there any Installation guidelines for your project?',
           },
           {
             type: 'input',
-            name: 'Usage',
+            name: 'usage',
             message: 'How do you use what was created in this project?',
           },
           {
             type: 'input',
-            name: 'Contribution',
+            name: 'contribution',
             message: 'Are there any contributors or collaborators to your project? (include tutorials)',
           },
           {
             type: 'input',
-            name: 'Email',
+            name: 'email',
             message: 'Contact Information for questions - insert email',
           },
           {
             type: 'input',
-            name: 'Github',
+            name: 'github',
             message: 'What is your github repo name?',
           },
           {
             type: 'list',
-            name: 'License',
+            name: 'license',
             message: 'What license are your using?',
-            choices: ['MIT', 'ISC', 'GNUGPLv3'],
+            choices: ['MIT', 'ISC', 'GNUGPLv3', 'none'],
             // filter(val){
             //     return val.toLowerCase();
             // }
