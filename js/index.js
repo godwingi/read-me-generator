@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const markDown = require(`./generateMarkdown`);
+const generateMarkdown = require(`./generateMarkdown`);
 
 
 // TODO: Create an array of questions for user input
@@ -46,28 +46,23 @@ const questions = [
             name: 'License',
             message: 'What license are your using?',
             choices: ['MIT', 'ISC', 'GNUGPLv3'],
-            filter(val){
-                return val.toLowerCase();
-            }
+            // filter(val){
+            //     return val.toLowerCase();
+            // }
           },
     ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, answers) {
-  fileName = "README";
-    fs.writeFile(`/${fileName}.md`, markDown.generateMarkdown(answers).toString()), (err) =>
-      err ? console.log(err) : console.log('Success!')
-};
+function writeToFile(answers) {
+    fs.writeFile(`./README.md`, generateMarkdown(answers), (err) => err ? console.log(err) : console.log('Success!')
+)};
 
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
     .then((answers) => {
-      const license = markDown.renderLicenseBadge(answers.License);
-      console.log(license)
-      const file = markDown.generateMarkdown(answers)
-      console.log(file)
-     
+      // const file = generateMarkdown(answers)
+      // console.log(file)
         return writeToFile(answers);
     })
     .catch((error)=> {
