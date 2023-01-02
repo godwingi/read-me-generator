@@ -1,7 +1,7 @@
 
-# undefined
+# READ ME GENERATOR
 
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License](https://img.shields.io/badge/License-ISC-yellow.svg)
 
 ## Table of Contents
   - [ProjectDescription](#Description)
@@ -12,20 +12,20 @@
   - [License](#License)
 
 ## Description
-  dsfs
+  Here is my brief description
 
 ## Installation
-  sdfs
+  N/A
 
 ## Usage
-  sdfs
+  You can use this generator by typing in your answers based on the prompts  given.
 
 ## Contribution
-  sdfs
+  N/A
 
 ## Questions
-  sdds
-  sdds
+  girdika.godwin@gmail.com
+  godwingi
 
   ## License
-  [https://opensource.org/licenses/MIT]
+  [https://opensource.org/licenses/ISC]
