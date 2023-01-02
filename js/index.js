@@ -46,9 +46,6 @@ const questions = [
             name: 'license',
             message: 'What license are your using?',
             choices: ['MIT', 'ISC', 'GNUGPLv3', 'none'],
-            // filter(val){
-            //     return val.toLowerCase();
-            // }
           },
     ];
 
